@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="volunteer_page">
+    <meta name="keywords" content="volunteer, msl, ssd">
+    <meta name="author" content="Rachel">    
+	<!--The viewport meta tag is used in web design to control how a webpage is displayed on different devices by adjusting the initial scale and width of the viewport.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--This is volunteer form for people who interested to join us as volunteer❤️-->
+    <title>Volunteer Form</title>
+	<!--External css-->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!--favicon-->
+	<link rel="icon" type="image/x-icon" href="M.ico">
+</head>
+
+<body id="volunteer_page">
+<!--Header-->
+<header>
+	<figure>
+			<img class="logo" alt="Malaysian Sign Language Logo" id="msl_logo" src="images/MSL_logo.png">
+	</figure>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Services <i class="fas fa-caret-down"></i></a>
+			<div class="dropdown-content">
+				<ul>
+					<li><a href="services.html">Services page</a></li>
+					<li><a href="service1.html">BIM Class</a></li>
+					<li><a href="service2.html">Haircut and Trimming</a></li>
+					<li><a href="service3.html">Sewing and Alteration</a></li>
+					<li><a href="service4.html">Charity Car Wash</a></li>
+				</ul>
+			</div>
+		</li>		
+		<li><a href="activities.html">Activities</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Forms <i class="fas fa-caret-down"></i></a>
+			<div class="dropdown-content">
+				<ul>
+					<li><a href="enquiryservice.html">Enquiry for Services Form</a></li>
+					<li><a href="Joinvolunteer.html">Volunteer Form</a></li>
+					<li><a href="FAQ.html">FAQ page</a></li>
+				</ul>
+			</div>
+		</li>		
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Profiles <i class="fas fa-caret-down"></i></a>
+			<div class="dropdown-content">
+				<ul>
+					<li><a href="profile.html">Profiles page</a></li>
+					<li><a href="aeron.html">Aeron Liu</a></li>
+					<li><a href="brandon.html">Brandon Lai</a></li>
+					<li><a href="rachel.html">Rachel Chung</a></li>
+					<li><a href="seow_zi_jie.html">Seow Zi Jie</a></li>
+					<li><a href="zaferah.html">Zaferah</a></li>
+				</ul>
+			</div>	
+		</li>		
+		<li><a href="enhancement1.html">Enhancement</a></li>
+	</ul>
+</nav>
+<div class="user-actions">
+	<a href="login.html" class="login">Login</a>
+	<a href="sign-up.html" class="signup">Sign up</a>
+</div>
+</header>
+	
+<section class="joinv">
+    <h1 class="Joinvolunteer">Join Volunteer</h1>
+	<form id="volunteerForm" action="mailto:102789822@students.swinburne.edu.my" class="enquiry_form" enctype="text/plain" method="post">
+      <fieldset>
+		<!-- First Name -->
+        <label for="firstName">First Name:<span>*</span></label>
+        <input type="text" id="firstName" name="firstName" maxlength="25" pattern="[A-Za-z]+" required>
+        <br>
+
+        <!-- Last Name -->
+        <label for="lastName">Last Name:<span>*</span></label>
+        <input type="text" id="lastName" name="lastName" maxlength="25" pattern="[A-Za-z]+" required>
+        <br>
+
+        <!-- Email Address -->
+        <label for="email">Email Address:<span>*</span></label>
+        <input type="email" id="email" name="email" required>
+        <br />
+
+        <!-- Address -->
+        <fieldset>
+			<legend>Address</legend>
+			<!-- Street Address -->
+			<label for="streetAddress">Street Address:<span>*</span></label>
+			<input type="text" id="streetAddress" name="streetAddress" maxlength="40" required>
+			<br>
+
+            <!-- City/Town -->
+            <label for="city">City/Town:<span>*</span></label>
+            <input type="text" id="city" name="city" maxlength="20" required>
+            <br>
+
+            <!-- State -->
+            <label for="state">State:<span>*</span></label>
+            <select id="state" name="state" required>
+                <option value="" disabled selected>Choose your state</option>                
+				<option value="Federal Territory of Kuala Lumpur">Federal Territory of Kuala Lumpur</option>
+				<option value="Federal Territory of Labuan">Federal Territory of Labuan</option>
+				<option value="Federal Territory of Putrajaya">Federal Territory of Putrajaya</option>
+				<option value="Johor">Johor</option>
+				<option value="Kedah">Kedah</option>
+				<option value="Kelantan">Kelantan</option>
+				<option value="Malacca">Malacca</option>
+				<option value="Negeri Sembilan">Negeri Sembilan</option>
+				<option value="Pahang">Pahang</option>
+				<option value="Perak">Perak</option>
+				<option value="Perlis">Perlis</option>
+				<option value="Penang">Penang</option>
+				<option value="Sabah">Sabah</option>
+				<option value="Sarawak">Sarawak</option>
+				<option value="Selangor">Selangor</option>
+				<option value="Terengganu">Terengganu</option>
+            </select>
+            <br>
+
+            <!-- Postcode -->
+            <label for="postcode">Postcode:<span>*</span></label>
+            <input type="text" id="postcode" name="postcode" pattern="[0-9]{5}" maxlength="5" required>
+            <br>
+        </fieldset>
+
+        <!-- Phone Number -->
+        <label for="phoneNumber">Phone Number:<span>*</span></label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" maxlength="10" placeholder="Example: 0123456789" required>
+        <br>
+
+		<label for="volunteerRole">Volunteer Role:<span>*</span></label>
+		<div class="dropdown">
+		  <select id="volunteerRole" name="volunteerRole" required>
+			<option value="" disabled selected>Select Volunteer Role</option>
+			<optgroup class="msl" id="msl" label="Malaysian Sign Language (MSL)">
+			  <option value="msl-interpreter">Interpreter</option>
+			  <option value="msl-tutor">Tutor</option>
+			  <option value="msl-volunteer">MSL Volunteer</option>
+			</optgroup>
+			<optgroup class="ssd" id="ssd" label="Sarawak Society for the Deaf (SSD)">
+			  <option value="ssd-admin">Administrative Support</option>
+			  <option value="ssd-event">Event Organizer</option>
+			  <option value="ssd-fundraiser">Fundraiser</option>
+			  <option value="ssd-volunteer">SSD Volunteer</option>
+			</optgroup>
+		  </select>
+		</div>
+		
+        <br>
+		
+		<p>
+			<label for="start">When can you start working?</label> 
+			<input type="date" id="start" name="start" value="2024-01-01" min="2024-01-01" max="2024-12-31" /> to 
+			<input type="date" id="end" name="end" value="2024-01-01" min="2024-01-01" max="2024-12-31" /> <br />
+		</p>
+
+        <!-- Submit Button -->
+        <button type="reset" id="reset" value="reset">Reset</button>
+		<button type="submit" id="submit" value="submit">Submit</button>
+	</fieldset>
+	</form>
+	<a href="#top" class="back-to-top">Back to Top</a>
+</section>
+
+<footer>
+		<!-- Section for footer -->
+	<section class="footer">
+		<!-- Footer content -->
+	<div class="footer-content">
+			<img src="images/MSL_logo.png" alt="logo">
+			<p> Welcome the Malaysia Sign Language Society! <br>
+			We are dedicated to your needs.</p>
+
+		<!-- Contact information -->
+		<div class="footer-container">
+			<h4>Contact Us</h4>
+				<ul>
+					<li><a href="tel:+608256789">(60) 82-567-89</a></li>
+				</ul>
+		</div>
+
+
+		 <!-- Footer icon to navigate to the the ssd information -->
+		<div class="footer-icons">
+			<ul>
+				<li><a href="https://www.facebook.com/sarawaksocietyforthedeaf"><img src="images/facebook.png" alt="Facebook"></a></li>
+				<li><a href="https://www.instagram.com/sarawak_societyforthedeaf/"><img src="images/instagram.png" alt="Instagram"></a></li>
+				<li><a href="https://www.youtube.com/@canineaddict1"><img src="images/youtube.png" alt="youtube"></a></li>
+				<li><a href="mailto:ssdkuching1982@gmail.com"><img src="images/email.png" alt="email"></a></li>
+			</ul>
+		</div>
+	</div>   
+      
+	<!-- Footer-content for navigation -->
+	<div class="footer-content">
+            
+		<div class="footer-container">
+			 
+			 <h4>Services</h4>
+				 <li><a href="services.html">Services</a></li>
+			 <li><a href="service1.html">BIM Class</a></li>
+			 <li><a href="service2.html">Haircut and Trimming</a></li>
+			 <li><a href="service3.html">Sewing And Alteration</a></li>
+			 <li><a href="service4.html">Charity Car Wash</a></li>
+		 </div>
+ 
+		 <div class="footer-container">
+			 <h4>Profiles</h4>
+			 <li><a href="aeron.html">Aeron Liu</a></li>
+			 <li><a href="brandon.html">Brandon Lai</a></li>
+			 <li><a href="rachel.html">Rachel Chung</a></li>
+			 <li><a href="seow_zi_jie.html">Seow Zi Jie</a></li>
+			 <li><a href="zaferah.html">Zaferah</a></li>
+		 </div>
+ 
+		 <div class="footer-container">
+			 <h4>Forms</h4>
+			 <li><a href="enquiryservice.html">Enquiry for Services Form</a></li>
+			 <li><a href="Joinvolunteer.html">Volunteer Form</a></li>
+		 </div>
+ 
+		 <div class="footer-container">
+			 <h4>Others</h4>
+			 <li><a href="index.html">Home</a></li>
+			 <li><a href="activities.html">Activites</a></li>
+			 <li><a href="enhancement1.html">Enhancement</a></li>
+			 <li><a href="login.html">Login</a></li>
+			 <li><a href="sign-up.html">Sign up</a></li>
+			 <li><a href="FAQ.html">FAQ page</a></li>
+			 <li><a href="acknowledgements.html">Acknowledgements</a></li>
+			 </div>
+ 
+		 </div>
+   
+	</section>
+	
+</footer>
+
+</body>
+
+</html>
